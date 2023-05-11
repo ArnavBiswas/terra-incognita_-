@@ -1,0 +1,114 @@
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 10px;
+  }
+  
+  .logo img {
+    width: 100px;
+    margin-left: 25px;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-style: cursive;
+    margin-right: 25px;
+  }
+  
+  .menu li {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .menu li ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #1a1515;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(117, 100, 100, 0.2);
+    font-style:monospace ;
+  }
+  
+  .menu li:hover ul {
+    display: block;
+  }
+  
+  .menu a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+  }
+  
+  .menu a:hover {
+    background-color: #333;
+    color: #fff;
+  }
+  .fa fa-home{ 
+    color: yellow;
+  }
+  * {
+    box-sizing: border-box;
+  }
+  
+  .bg-image {
+    /* Full height */
+    height: 50%;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  /* Images used */
+  .img1 { background-image: url("a.jpg"); }
+  .img2 { background-image: url("b.jpg"); }
+  .img3 { background-image: url("c.jpg"); }
+  .img4 { background-image: url("d.jpg"); }
+  .img5 { background-image: url("e.jpg"); }
+  .img6 { background-image: url("f.jpg"); }
+  
+  /* Position text in the middle of the page/image */
+  .bg-text {
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+    color: white;
+    font-weight: bold;
+    font-size: 80px;
+    border: 10px solid #f1f1f1;
+    position: fixed; /* Stay fixed */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 700px;
+    padding: 20px;
+    text-align: center;
+  }    
+  .bg-subtext{
+    color: white;
+    font-size: 30px;
+    font-style: italic;
+    position: fixed; /* Stay fixed */
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    width: 1200px;
+    padding: 20px;
+    text-align: center;
+}
